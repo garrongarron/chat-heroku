@@ -24,6 +24,7 @@ html, body {
   height: 100%;
   margin: 0;
   padding: 0;
+  background: #fff;
 }
 
 ul {
@@ -147,4 +148,19 @@ ul {
   position: absolute;
   right: 0;
   width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .login.page .title {
+    font-size: 100%;
+  }
+  .login.page .form .usernameInput {
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #fff;
+    outline: none;
+    padding-bottom: 15px;
+    text-align: center;
+    width: 200px;
+  }
 }

@@ -1,3 +1,7 @@
+/*
+//https://stackoverflow.com/questions/10058226/send-response-to-all-clients-except-sender
+*/
+
 var PORT = process.env.PORT || 5000;
 var express = require('express');
 var app = express();
