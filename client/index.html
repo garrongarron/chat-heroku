@@ -1,35 +1,31 @@
-<!DOCTYPE html>
-<html>
-
+<!doctype html>
+<html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Chat App</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" media="screen" href="ios.css" />
-  <script src="/socket.io/socket.io.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Federico Zacayan</title>
+  <link href="style.css" rel="stylesheet" type="text/css"/>
 </head>
-
 <body>
-  <main>
-    <section>
-      <p>Hey 😊</p>
-      <br />
-      <p>Hi there!</p>
-      <br />
-    </section>
-    <div>
-      <form>
-        <div>
-          <input id="message">
-        </div>
-        <div>
-          <button>Send</button>
-        </div>
-      </form>
-    </div>
-  </main>
+  <ul class="pages">
+    <li class="chat page">
+      <div class="chatArea">
+        <ul class="messages"></ul>
+      </div>
+      <input class="inputMessage" placeholder="Type here..."/>
+    </li>
+    <li class="login page">
+      <div class="form">
+        <h3 class="title">What's your nickname?</h3>
+        <input class="usernameInput" type="text" maxlength="14" />
+      </div>
+    </li>
+  </ul>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js"></script>
   <script src="main.js"></script>
 </body>
-
 </html>
+
+  
